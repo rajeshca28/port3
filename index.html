@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right,
+          #ff8177 0%,
+          #ff867a 0%,
+          #ff8c7f 21%,
+          #f99185 52%,
+          #cf556c 78%,
+          #b12a5b 100%
+        );
+        font-family: "Work Sans", sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Days One", sans-serif;
+      }
+      nav {
+        display: flex;
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+      }
+
+      nav ul {
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        list-style: none;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+        padding: 0 15px;
+        color: aqua;
+        transition: 0.2s;
+        text-transform: uppercase;
+      }
+
+      nav ul li a:hover {
+        transition: 0.2s;
+        color: rgb(109, 109, 222);
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .hero {
+        padding-top: 130px;
+      }
+
+      .hero img {
+        border-style: none;
+        border-radius: 50%;
+        margin: 0 auto;
+        max-width: 440px;
+        display: block;
+      }
+
+      h1 {
+        color: cadetblue;
+        text-align: center;
+        font-size: 24px;
+        margin: 30px 0px 100px;
+      }
+
+      .aboutme {
+        width: 90%;
+        max-width: 1100px;
+        height: auto;
+        background-color: aliceblue;
+        text-align: center;
+        padding: 40px 50px 70px;
+        margin: 0 auto;
+        box-shadow: 10px 10px 0px rgb(4, 4, 4, 0.4),
+          -10px -10px 0 rgb(219, 66, 66, 0.8);
+      }
+
+      .aboutme-section {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+      }
+
+      .aboutme-image {
+        height: 450px;
+        width: 400px;
+        background-image: url("rob-aboutme.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .aboutme-text {
+        height: auto;
+        width: 40%;
+        margin-left: 40px;
+        text-align: left;
+      }
+
+      #projects {
+        padding: 5px;
+        margin: 5%;
+        width: 90%;
+        height: auto;
+        text-align: center;
+      }
+
+      .projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+      }
+
+      #projects h2 {
+        color: #b12a5b;
+      }
+
+      .earth-project {
+        width: 400px;
+        height: 400px;
+        background-color: aliceblue;
+        position: relative;
+        border-radius: 10px;
+        background-image: url("earth.jpeg");
+        margin: 20px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .bbc-project {
+        width: 400px;
+        height: 400px;
+        background-color: aliceblue;
+        position: relative;
+        border-radius: 10px;
+        background-image: url("bbc.png");
+        margin: 20px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .text {
+        position: absolute;
+        height: 65px;
+        width: 360px;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: azure;
+        overflow: hidden;
+        transition: 0.2s;
+        padding: 20px;
+      }
+
+      .text:hover {
+        height: 175px;
+        transition: 0.3s;
+      }
+
+      .text h3 {
+        margin-top: 3px;
+      }
+
+      .content {
+        color: black;
+      }
+
+      .button {
+        border: 5px solid lightblue;
+        border-radius: 10px;
+        width: 160px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="container">
+        <img src="rob.jpeg" alt="" />
+        <h1>Hi! I'm Rob! I teach people how to code and make websites.</h1>
+      </div>
+    </section>
+    <section id="aboutme" class="aboutme">
+      <h2>About me</h2>
+      <div class="aboutme-section">
+        <div class="img">
+          <div class="aboutme-image"></div>
+        </div>
+        <div class="aboutme-text">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque,
+            minima. Quia incidunt, illo ad magnam suscipit quisquam quasi iste
+            corporis unde ipsam delectus fuga ab repellendus quaerat voluptas
+            dicta quo! Dolorem aspernatur exercitationem dolor inventore
+            assumenda a beatae. Aliquam fugit, aut modi velit nulla non at ullam
+            dolores. Enim, saepe nostrum! Quasi officiis adipisci fuga
+            cupiditate. Fugit vel perspiciatis sequi?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloremque, adipisci. Ratione voluptatum doloremque quidem pariatur!
+            Nemo veritatis perspiciatis ducimus iusto, ex quo error consequuntur
+            vero eaque neque accusamus? Harum, cum. Non dolor provident culpa
+            architecto doloribus. Rem placeat minus libero culpa optio
+            blanditiis, obcaecati perferendis ratione distinctio vitae
+            laboriosam nemo, cupiditate pariatur omnis et voluptatem magni
+            quaerat. Recusandae, distinctio quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+            quae quam praesentium, ipsa nobis eum voluptas. Quod aperiam esse
+            consequatur iste accusamus, optio, voluptate eaque quam provident,
+            eos odio in? Soluta placeat harum sequi fuga, voluptatem, esse
+            consequatur ad, qui facere aperiam atque quidem expedita alias magni
+            amet deserunt officia architecto veritatis recusandae voluptatum
+            totam? Deserunt dignissimos rerum amet iure.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="project">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="earth-project">
+            <div class="text">
+              <h3 class="project-name">Earth facts</h3>
+              <div class="content">
+                <p>An HTML project about some facts about the earth</p>
+              </div>
+              <a href="#" class="button">View Project</a>
+            </div>
+          </div>
+
+          <div class="bbc-project">
+            <div class="text">
+              <h3 class="project-name">BBC News Clone</h3>
+              <div class="content">
+                <p>An HTML project about some facts about the earth</p>
+              </div>
+              <a href="#" class="button">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactme" class="contact">
+      <h2>Contact</h2>
+      <p>Use this form to get in touch, i would love to hear from you!</p>
+      <form action="" class="contact-form"></form>
+    </section>
+  </body>
+</html>
